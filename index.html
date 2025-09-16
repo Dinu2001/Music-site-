@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Music site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Rock+Salt&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+
+    }
+
+    body {
+      scroll-behavior: smooth;
+      padding-bottom: 20px;
+      overflow-x: hidden;
+      background: rgb(13, 9, 71);
+      background: linear-gradient(90deg, rgba(13, 9, 71, 1) 0%, rgba(71, 7, 124, 1) 43%, rgba(214, 2, 254, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    }
+
+    .navbar-item {
+      margin-left: 50%;
+      transform: translateX(-30%);
+    }
+
+    @media (max-width: 992px) {
+      .navbar-item {
+        margin-left: 0%;
+        transform: translateX(0%);
+      }
+    }
+
+    .navbar {
+      background: rgb(13, 9, 71);
+      background: linear-gradient(90deg, rgba(13, 9, 71, 1) 0%, rgba(71, 7, 124, 1) 43%, rgba(214, 2, 254, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    }
+
+    .hero-section {
+      max-height: fit-content;
+      background-image: url("https://images.pexels.com/photos/167491/pexels-photo-167491.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
+
+    .img-gallery img {
+      width: 100%;
+      overflow: hidden;
+      transition: .5s;
+    }
+
+    .img-gallery img:hover {
+
+      filter: grayscale(1);
+      transform: scale(1.04);
+      transition: all 1s;
+    }
+
+    .main-text {
+      font-family: cursive;
+      font-weight: 100;
+    }
+
+    .main-text2 {
+      font-family: "Figtree", sans-serif;
+      font-style: normal;
+    }
+
+    footer i {
+      color: white;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!--navigation bar -->
+  <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid navbar-item">
+      <a class="navbar-brand" href="#">DX</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Streaming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">New songs</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--hero section  -->
+  <div class="container-fluid hero-section p-5">
+    <div class="row d-flex justify-content-left align-items-center w-100 h-100" style="margin: 10vh auto;">
+      <div class="col-12 col-md-7 d-flex justify-content-center align-items-left flex-column">
+        <h1 class="text-light main-text2" style="font-size: 4rem; ">Discover, Stream, <br> and <br> Enjoy Your Favorite
+          Tunes!</h1>
+        <p class="text-light main-text" style="font-size: 1.1rem"> No ads, no interruptions—just pure music bliss. Play
+          your favorites, discover new sounds, and enjoy the experience!</p>
+        <div class="d-flex justify-content-left align-items-center">
+          <button class="btn  btn-primary px-3 ">View more!</button>
+          <div class="icons">
+            <a href="#"><i class="fab fa-facebook" style="font-size: 2.5rem; margin: 10px;color: white"></i></a>
+            <a href="#"><i class="fab fa-twitter" style="font-size: 2.5rem; margin: 10px;color: white""></i></a>
+            <a href=" #"><i class="fab fa-youtube" style="font-size: 2.5rem; margin: 10px;color: white""></i></a>
+          </div>
+        </div>
+
+      </div>
+      <div class=" col-12 col-md-4 d-flex justify-content-center align-items-center mt-3">
+                  <div class="card" style="width: 20rem;">
+                    <img
+                      src="https://www.shutterstock.com/image-photo/happy-african-american-woman-headphones-600nw-2496638627.jpg"
+                      class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <img src="./pngtree-music-player-interface-button-png-image_6449167.png" class="card-img-top"
+                        alt="...">
+                    </div>
+                  </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class=" container my-5 p-1">
+        <div class="row text-center">
+          <h1 class="text-light my-5" style="font-family: sans-serif">About us <i class="fa-solid fa-music"></i></h1>
+
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12 col-md-6">
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/049/201/864/small_2x/young-woman-enjoying-music-while-wearing-headphones-in-purple-lit-room-photo.jpeg"
+              class="img-fluid" alt="">
+          </div>
+          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center flex-wrap">
+
+            <h1 class="text-light">Our Mission</h1>
+            <p class="text-light text-center">
+              At DX, our goal is to revolutionize the way you discover, enjoy, and share music. Whether
+              you're a fan of chart-topping hits, underground gems, or independent artists, we provide a seamless and
+              immersive experience that keeps you connected to the music you love.
+            </p>
+
+            <h1 class="text-light">What We Offer</h1>
+            <p class="text-light text-center">
+
+              🎵 Unlimited Music Streaming – Explore a vast library of songs from various genres, artists, and moods.
+              📀 Curated Playlists – Handpicked playlists for every vibe, from party anthems to chill sessions.
+              🔊 High-Quality Audio – Enjoy crystal-clear sound with our high-definition streaming.
+              🚀 Personalized Experience – Smart recommendations based on your listening habits.
+              🌍 Anywhere, Anytime – Listen on the go with our web and mobile-friendly platform.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container my-5">
+        <div class="row text-center">
+          <h1 class="text-light m-5" style="font-family: sans-serif">Play now <i class="fa-solid fa-music"></i></h1>
+
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-7 d-flex justify-content-center align-items-center">
+            <p class="text-light  text-center mb-5">
+              Join the Movement
+              Become a part of DX and dive into a world of limitless music. Stream, share, and discover the
+              soundtrack to your life today!
+
+              🎧 Music starts here.
+            </p>
+          </div>
+
+
+        </div>
+
+        <div class="row col-12 d-flex align-item-center justify-content-center">
+
+
+          <div class="card p-1 m-2" style="width: 13rem; height:18rem">
+            <img
+              src="https://people.com/thmb/JeX3Zm0C8LpUeM12Oa3LzQS6snI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(764x229:766x231)/Blackpink-2023-members-01-9d67ffe25a474456b4be77adedb057b0.jpg"
+              class="card-img-top img-fluid h-50" alt="...">
+            <div class="card-body">
+              <img src="./pngtree-music-player-interface-button-png-image_6449167.png" class="card-img-top img-fluid"
+                alt="...">
+            </div>
+          </div>
+
+
+
+
+          <div class="card p-1 m-2" style="width: 13rem; height:18rem">
+            <img src="https://www.pluggedin.com/wp-content/uploads/2025/01/rose-apt-1024x587.jpg"
+              class="card-img-top img-fluid h-50" alt="...">
+            <div class="card-body">
+              <img src="./pngtree-music-player-interface-button-png-image_6449167.png" class="card-img-top img-fluid"
+                alt="...">
+            </div>
+          </div>
+
+
+
+
+          <div class="card p-1 m-2" style="width: 13rem; height:18rem">
+            <img
+              src="https://variety.com/wp-content/uploads/2025/01/Die-With-A-Smile-Artwork-1-e1738373995785.jpg?crop=0px%2C0px%2C1600px%2C900px&resize=1000%2C563"
+              class="card-img-top img-fluid h-50" alt="...">
+            <div class="card-body">
+              <img src="./pngtree-music-player-interface-button-png-image_6449167.png" class="card-img-top img-fluid"
+                alt="...">
+            </div>
+          </div>
+
+
+
+
+          <div class="card p-1 m-2" style="width: 13rem; height:18rem">
+            <img
+              src="https://i.ytimg.com/vi/kffacxfA7G4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCO2WKMQG2qK08gcXy5rhxuUVcqQA"
+              class="card-img-top img-fluid h-50" alt="...">
+            <div class="card-body">
+              <img src="./pngtree-music-player-interface-button-png-image_6449167.png" class="card-img-top img-fluid"
+                alt="...">
+            </div>
+          </div>
+
+
+
+          <div class="card p-1 m-2" style="width: 13rem; height:18rem">
+            <img
+              src="https://images.bubbleup.com/vipnation/1-default/2-vipnationcom/static_vip_1280x1280_maroon52024_national_1712352696.jpg"
+              class="card-img-top img-fluid h-50" alt="...">
+            <div class="card-body">
+              <img src="./pngtree-music-player-interface-button-png-image_6449167.png" class="card-img-top img-fluid"
+                alt="...">
+            </div>
+          </div>
+
+
+
+          <div class="card p-1 m-2" style="width: 13rem; height:18rem">
+            <img
+              src="https://kingchoice.me/media/CACHE/images/45ed3719a55da524cb1ea3c6e8f7221f_HBYXMos/df8bb49a0e7f2583cc15578912e9a7d3.jpg"
+              class="card-img-top img-fluid h-50" alt="...">
+            <div class="card-body">
+              <img src="./pngtree-music-player-interface-button-png-image_6449167.png" class="card-img-top img-fluid"
+                alt="...">
+            </div>
+          </div>
+
+
+
+          <div class="card p-1 m-2" style="width: 13rem; height:18rem">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BYzU5NjA3Y2YtY2UwZi00ZDMwLWE5NjAtOTljNTA4NTI4ZjYyXkEyXkFqcGc@._V1_.jpg"
+              class="card-img-top img-fluid h-50" alt="...">
+            <div class="card-body">
+              <img src="./pngtree-music-player-interface-button-png-image_6449167.png" class="card-img-top img-fluid"
+                alt="...">
+            </div>
+          </div>
+
+
+          <div class="card p-1 m-2" style="width: 13rem; height:18rem">
+            <img
+              src="https://lankasara.com/wp-content/uploads/2023/12/Hariharan-002.jpg"
+              class="card-img-top img-fluid h-50" alt="...">
+            <div class="card-body">
+              <img src="./pngtree-music-player-interface-button-png-image_6449167.png" class="card-img-top img-fluid"
+                alt="...">
+            </div>
+          </div>
+
+
+          <div class="card p-1 m-2" style="width: 13rem; height:18rem">
+            <img
+              src="https://theithacan.org/wp-content/uploads/2023/10/taylor-swift.jpg"
+              class="card-img-top img-fluid h-50" alt="...">
+            <div class="card-body">
+              <img src="./pngtree-music-player-interface-button-png-image_6449167.png" class="card-img-top img-fluid"
+                alt="...">
+            </div>
+          </div>
+
+
+
+          <div class="card p-1 m-2" style="width: 13rem; height:18rem">
+            <img src="https://media.pitchfork.com/photos/668ec9e2234f993753199dcd/16:9/w_4000,h_2250,c_limit/Eminem.jpg"
+              class="card-img-top img-fluid h-50" alt="...">
+            <div class="card-body">
+              <img src="./pngtree-music-player-interface-button-png-image_6449167.png" class="card-img-top img-fluid"
+                alt="...">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+      <div class="container-fluid mt-5">
+        <h1 class="text-light my-5 text-center">Popular artists!<i class="fa-solid fa-music"></i> </h1>
+        <div class="row d-flex justify-content-start align-items-center">
+          <div class="img-gallery" style="columns: 310px">
+            <img src="https://music.usc.edu/wp-content/uploads/2014/02/Thornton_F12_JuniorFinal-35-684x1024.jpg"
+              style="width: 100%" alt="">
+            <img src="https://assets3.thrillist.com/v1/image/2961092/1200x600/scale;;webp=auto;jpeg_quality=85.jpg"
+              style="width: 100%" alt="">
+
+            <img
+              src="https://www.hindustantimes.com/ht-img/img/2024/10/30/550x309/maroon_5_1730272238377_1730272254100.jpg"
+              style="width: 100%" alt="">
+            <img src="https://singersroom.com/wp-content/uploads/2023/05/One-Direction-Top-Songs.jpg"
+              style="width: 100%" alt="">
+            <img
+              src="https://www.udiscovermusic.com/wp-content/uploads/2022/01/Eminem-GettyImages-484723013-1000x600.jpg"
+              style="width: 100%" alt="">
+            <img
+              src="https://rukminim3.flixcart.com/image/850/1000/xif0q/poster/q/p/y/small-poster005-black-pink-korean-band-posters-pandit-ji-poster-original-imaggkd7bzzhsq97.jpeg?q=90&crop=false"
+              style="width: 100%" alt="">
+            <img
+              src="https://play-lh.googleusercontent.com/nUzK8WjxbT-X59mlDYyPej6HO_j45Ou7qOIIgnJbTO6IzNA6iAU_kMdA38hHGONBv9c"
+              style="width: 100%" alt="">
+            <img src="https://static.independent.co.uk/2021/03/05/09/newFile.jpg" style="width: 100%" alt="">
+            <img
+              src="https://w0.peakpx.com/wallpaper/743/671/HD-wallpaper-rihana-dior-rihana-celebrities-girls-music.jpg"
+              style="width: 100%" alt="">
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <footer class="text-center bg-body-tertiary mt-5"
+        style=" background: rgb(13, 9, 71);
+      background: linear-gradient(90deg, rgba(13, 9, 71, 1) 0%, rgba(71, 7, 124, 1) 43%, rgba(214, 2, 254, 1) 100%, rgba(0, 212, 255, 1) 100%);">
+        <div class="container pt-4">
+          <section class="mb-4">
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+          </section>
+        </div>
+        <div class="text-center p-3 text-light" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2025 Copyright: Dinuja.com
+
+        </div>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
